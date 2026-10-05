@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#333;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    box-shadow:0 2px 20px rgba(0,0,0,0.08);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#5C4033;
+}
+
+.logo span{
+    color:#A67B5B;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#5C4033;
+    font-weight:500;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#A67B5B;
+}
+
+/* Header */
+
+.header{
+    text-align:center;
+    padding:70px 10%;
+}
+
+.header h1{
+    font-size:48px;
+    color:#5C4033;
+    margin-bottom:20px;
+}
+
+.header p{
+    color:#666;
+    font-size:18px;
+}
+
+/* Statistics */
+
+.stats{
+    width:85%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    font-size:40px;
+    color:#5C4033;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+}
+
+/* Charts */
+
+.charts{
+    width:85%;
+    margin:70px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.chart-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.chart-card h2{
+    color:#5C4033;
+    margin-bottom:30px;
+}
+
+.chart-box{
+    height:300px;
+    background:#f8f5f2;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#A67B5B;
+    font-size:20px;
+    font-weight:600;
+}
+
+/* Activity */
+
+.activity{
+    width:85%;
+    margin:0 auto 80px;
+}
+
+.activity-card{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.activity-card h2{
+    color:#5C4033;
+    margin-bottom:30px;
+}
+
+.activity-card ul{
+    list-style:none;
+}
+
+.activity-card li{
+    padding:18px;
+    margin-bottom:15px;
+    background:#f8f5f2;
+    border-radius:12px;
+    color:#666;
+}

@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#333;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#ffffff;
+    box-shadow:0 2px 20px rgba(0,0,0,0.08);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#5C4033;
+}
+
+.logo span{
+    color:#A67B5B;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#5C4033;
+    font-weight:500;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#A67B5B;
+}
+
+/* Profile Header */
+
+.profile-header{
+    text-align:center;
+    padding:80px 10% 50px;
+}
+
+.profile-image{
+    width:130px;
+    height:130px;
+    background:#5C4033;
+    color:#fff;
+    font-size:45px;
+    font-weight:600;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 25px;
+}
+
+.profile-header h1{
+    color:#5C4033;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.profile-header p{
+    color:#777;
+    font-size:18px;
+}
+
+/* Statistics */
+
+.stats{
+    width:85%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.card h2{
+    color:#5C4033;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+}
+
+/* Profile Details */
+
+.profile-section{
+    display:flex;
+    justify-content:center;
+    padding:70px 10%;
+}
+
+.profile-card{
+    width:800px;
+    background:#fff;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.profile-card h2{
+    color:#5C4033;
+    margin-bottom:35px;
+}
+
+.detail{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 0;
+    border-bottom:1px solid #eeeeee;
+}
+
+.detail span{
+    color:#5C4033;
+    font-weight:600;
+}
+
+.detail p{
+    color:#666;
+}
+
+.edit-btn{
+    margin-top:35px;
+    padding:15px 35px;
+    background:#5C4033;
+    color:#fff;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.edit-btn:hover{
+    background:#A67B5B;
+}
+
+/* Footer */
+
+footer{
+    background:#5C4033;
+    color:#fff;
+    text-align:center;
+    padding:45px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}

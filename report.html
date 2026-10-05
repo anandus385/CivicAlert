@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicAlert | Report Issue</title>
+
+    <link rel="stylesheet" href="report.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        Civic<span>Alert</span>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="report.html" class="active">Report Issue</a></li>
+        <li><a href="track.html">Track Complaint</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- Report Form -->
+
+<section class="report-section">
+
+<div class="report-card">
+
+<h1>Report a Civic Issue</h1>
+
+<p>
+Help your community by reporting infrastructure problems.
+</p>
+
+<form id="reportForm">
+
+<div class="input-box">
+
+<label>Issue Title</label>
+
+<input
+type="text"
+id="title"
+placeholder="Example: Large pothole near bus stop"
+required>
+
+</div>
+
+
+<div class="input-box">
+
+<label>Category</label>
+
+<select id="category" required>
+
+<option value="">Select Category</option>
+
+<option>Pothole</option>
+
+<option>Garbage</option>
+
+<option>Streetlight</option>
+
+<option>Water Leakage</option>
+
+<option>Drainage</option>
+
+<option>Road Damage</option>
+
+<option>Traffic Signal</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="input-box">
+
+<label>Description</label>
+
+<textarea
+
+id="description"
+
+rows="6"
+
+placeholder="Describe the issue..."
+
+required>
+
+</textarea>
+
+</div>
+
+
+<div class="input-box">
+
+<label>Upload Image</label>
+
+<input
+type="file"
+id="image"
+accept="image/*"
+required>
+
+<p id="predictionResult" class="prediction-box"></p>
+</div>
+
+
+<div class="input-box">
+
+<label>Current Location</label>
+
+<input
+
+type="text"
+
+id="location"
+
+readonly
+
+placeholder="Click Detect Location">
+
+</div>
+
+<button
+
+type="button"
+
+id="locationBtn"
+
+class="location-btn">
+
+📍 Detect Location
+
+</button>
+
+<br><br>
+
+<button
+
+type="submit"
+
+class="submit-btn">
+
+Submit Complaint
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+
+<script type="module" src="js/report.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#333;
+}
+
+/* Navbar */
+
+.navbar{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#ffffff;
+    box-shadow:0 2px 20px rgba(0,0,0,0.08);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#5C4033;
+}
+
+.logo span{
+    color:#A67B5B;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:35px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#5C4033;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#A67B5B;
+}
+
+/* Register Section */
+
+.register-section{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+}
+
+.register-card{
+    width:500px;
+    background:#ffffff;
+    padding:45px;
+    border-radius:25px;
+    box-shadow:0 12px 35px rgba(0,0,0,0.08);
+}
+
+.register-card h1{
+    text-align:center;
+    color:#5C4033;
+    margin-bottom:15px;
+}
+
+.register-card p{
+    text-align:center;
+    color:#777;
+    margin-bottom:35px;
+    line-height:1.7;
+}
+
+/* Input Fields */
+
+.input-box{
+    margin-bottom:22px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:10px;
+    color:#5C4033;
+    font-weight:500;
+}
+
+.input-box input{
+    width:100%;
+    padding:15px;
+    border:1px solid #dddddd;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.input-box input:focus{
+    border-color:#A67B5B;
+    box-shadow:0 0 8px rgba(166,123,91,0.2);
+}
+
+/* Button */
+
+.register-btn{
+    width:100%;
+    padding:16px;
+    background:#5C4033;
+    color:white;
+    border:none;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.register-btn:hover{
+    background:#A67B5B;
+    transform:translateY(-3px);
+}
+
+/* Login Link */
+
+.login-link{
+    text-align:center;
+    margin-top:25px;
+    color:#666;
+}
+
+.login-link a{
+    text-decoration:none;
+    color:#A67B5B;
+    font-weight:600;
+}

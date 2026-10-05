@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CivicAlert | Admin Dashboard</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= Navbar ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        Civic<span>Alert</span>
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="admin.html" class="active">
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <button id="logoutBtn">
+                Logout
+            </button>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= Dashboard ================= -->
+
+<section class="dashboard">
+
+    <h1>Admin Dashboard</h1>
+    <div class="code-section">
+
+    <h2>Area Access Code</h2>
+
+    <div class="code-box">
+
+        <input
+            type="text"
+            id="newAreaCode"
+            placeholder="Enter New Area Code">
+
+        <button id="updateCodeBtn">
+            Update Code
+        </button>
+
+    </div>
+
+</div>
+
+    <!-- Statistics -->
+
+    <div class="stats">
+
+        <div class="box">
+
+            <h2 id="totalComplaints">0</h2>
+
+            <p>Total Complaints</p>
+
+        </div>
+
+        <div class="box">
+
+            <h2 id="pendingCount">0</h2>
+
+            <p>Pending</p>
+
+        </div>
+
+        <div class="box">
+
+            <h2 id="progressCount">0</h2>
+
+            <p>In Progress</p>
+
+        </div>
+
+        <div class="box">
+
+            <h2 id="fixedCount">0</h2>
+
+            <p>Fixed</p>
+
+        </div>
+
+    </div>
+
+    <!-- Search & Filter -->
+
+    <div class="filter-bar">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search by title, category or user email">
+
+        <select id="statusFilter">
+
+            <option value="All">All Complaints</option>
+
+            <option value="Pending">Pending</option>
+
+            <option value="In Progress">In Progress</option>
+
+            <option value="Fixed">Fixed</option>
+
+        </select>
+
+    </div>
+
+    <!-- Complaint List -->
+
+    <h2 class="heading">
+
+        All Complaints
+
+    </h2>
+
+    <div id="complaintsContainer">
+
+    </div>
+
+</section>
+
+<script type="module" src="js/admin.js"></script>
+
+</body>
+
+</html>

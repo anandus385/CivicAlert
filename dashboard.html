@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicAlert | Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        Civic<span>Alert</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="report.html">Report Issue</a></li>
+        <li><a href="track.html">Track Complaint</a></li>
+    </ul>
+
+    <button id="logoutBtn" class="logout-btn">
+        Logout
+    </button>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <h1>
+        Welcome,
+        <span id="userName">User</span> 👋
+    </h1>
+
+    <p>
+        Welcome to CivicAlert. Report civic infrastructure issues,
+        track complaint progress and help build a smarter city.
+    </p>
+
+</section>
+
+<!-- ================= PROFILE ================= -->
+
+<section class="dashboard">
+
+    <div class="card">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+        <h2>Profile</h2>
+
+        <p><strong>Name:</strong></p>
+        <p id="profileName">Loading...</p>
+
+        <br>
+
+        <p><strong>Email:</strong></p>
+        <p id="profileEmail">Loading...</p>
+
+        <br>
+
+        <p><strong>Phone:</strong></p>
+        <p id="profilePhone">Loading...</p>
+
+    </div>
+
+    <div class="card">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+
+        <h2>Report Issue</h2>
+
+        <p>
+            Report potholes, garbage,
+            drainage, streetlights,
+            road damage and more.
+        </p>
+
+        <a href="report.html">
+            <button>Open</button>
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png">
+
+        <h2>Track Complaint</h2>
+
+        <p>
+            View the progress of your
+            submitted complaints.
+        </p>
+
+        <a href="track.html">
+            <button>Open</button>
+        </a>
+
+    </div>
+
+    <div class="card">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+
+        <h2>Complaint Summary</h2>
+
+        <p>
+            View analytics of your
+            complaint submissions.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= ANALYTICS ================= -->
+
+<section class="analytics">
+
+    <h2>Complaint Analytics</h2>
+
+    <div class="chart-container">
+
+        <canvas id="complaintChart"></canvas>
+
+    </div>
+
+</section>
+
+<!-- ================= RECENT ================= -->
+
+<section class="recent">
+
+    <h2>Recent Activity</h2>
+
+    <div class="coming">
+
+        Your recently submitted complaints
+        will appear here.
+
+    </div>
+
+</section>
+
+<!-- Firebase Dashboard JS -->
+
+<script type="module" src="js/dashboard.js"></script>
+
+</body>
+</html>
